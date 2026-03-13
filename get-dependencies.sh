@@ -6,21 +6,15 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-# pacman -Syu --noconfirm PACKAGESHERE
+pacman -Syu --noconfirm libappindicator
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-# Comment this out if you need an AUR package
-#make-aur-package PACKAGENAME
-
-# If the application needs to be manually built that has to be done down here
-
-# if you also have to make nightly releases check for DEVEL_RELEASE = 1
-#
-# if [ "${DEVEL_RELEASE-}" = 1 ]; then
-# 	nightly build steps
-# else
-# 	regular build steps
-# fi
+echo "Getting telegram binary..."
+echo "---------------------------------------------------------------"
+mkdir -p ./AppDir/bin
+wget 'https://github.com/telegramdesktop/tdesktop/releases/download/v6.6.2/tsetup.6.6.2.tar.xz' -O /tmp/telegram.tar.xz
+tar xvf /tmp/telegram.tar.xz
+mv -v ./Telegram/Telegram ./AppDir/bin
