@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm webkit2gtk-4.1 pipewire-audio pipewire-jack
+pacman -Syu --noconfirm webkit2gtk-4.1 pipewire-audio pipewire-jack gst-plugin-va geoclue
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
