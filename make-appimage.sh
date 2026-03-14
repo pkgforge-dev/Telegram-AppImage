@@ -12,7 +12,7 @@ export DESKTOP=https://raw.githubusercontent.com/telegramdesktop/tdesktop/refs/h
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/Telegram /usr/lib/libwayland-*.so*
+quick-sharun ./AppDir/bin/Telegram /usr/lib/libwayland-*.so* /usr/lib/libwebkit2gtk-4.1.so*
 echo 'DESKTOPINTEGRATION=0' >> ./AppDir/.env
 
 # Turn AppDir into AppImage
