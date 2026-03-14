@@ -28,4 +28,5 @@ if [ "$ARCH" = "x86_64" ]; then
 	echo "$TARBALL_LINK" | awk -F'/' '{print $(NF-1)}' > ~/version
 else
 	pacman -S --noconfirm telegram-desktop
+	VERSION=$(pacman -Q telegram-desktop | awk '{print $2; exit}')
 fi
