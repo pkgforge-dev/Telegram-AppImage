@@ -9,6 +9,7 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
 	geoclue          \
 	gst-libav        \
+	gst-plugins-base \
 	gst-plugins-bad  \
 	gst-plugins-good \
 	gst-plugin-va    \
