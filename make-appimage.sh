@@ -3,7 +3,8 @@
 set -eu
 
 ARCH=$(uname -m)
-export ARCH
+VERSION=$(pacman -Q telegram-desktop | awk '{print $2; exit}')
+export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
