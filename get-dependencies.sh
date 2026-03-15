@@ -4,15 +4,16 @@ set -eu
 
 ARCH=$(uname -m)
 
+#	gst-libav        \
+#	gst-plugins-base \
+#	gst-plugins-bad  \
+#	gst-plugins-good \
+#	gst-plugin-va    \
+
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
 	geoclue          \
-	gst-libav        \
-	gst-plugins-base \
-	gst-plugins-bad  \
-	gst-plugins-good \
-	gst-plugin-va    \
 	pipewire-audio   \
 	pipewire-jack    \
 	telegram-desktop \
