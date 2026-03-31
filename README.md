@@ -15,7 +15,7 @@
 | :---: | :---: |
 | [Click here](https://github.com/pkgforge-dev/Telegram-AppImage/releases/latest) | [Click here](https://github.com/telegramdesktop/tdesktop) |
 
-**These buidls include webkit2gtk4 for the instant view functionality**
+**These builds include webkit2gtk4 for the instant view functionality**
 
 </div>
 
