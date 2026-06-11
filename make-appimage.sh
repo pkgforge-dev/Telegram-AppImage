@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 VERSION=$(pacman -Q telegram-desktop | awk '{print $2; exit}')
 export ARCH VERSION
 export OUTPATH=./dist
-export ADD_HOOKS="self-updater.bg.hook"
+export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=https://raw.githubusercontent.com/telegramdesktop/tdesktop/refs/heads/dev/Telegram/Resources/art/icon256.png
 export DESKTOP=https://raw.githubusercontent.com/telegramdesktop/tdesktop/refs/heads/dev/lib/xdg/org.telegram.desktop.desktop
