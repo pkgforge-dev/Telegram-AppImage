@@ -15,9 +15,8 @@ pacman -Syu --noconfirm \
 	gst-plugin-va    \
 	pipewire-audio   \
 	pipewire-jack    \
-	telegram-desktop \
-	webkit2gtk-4.1
+	telegram-desktop
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano ffmpeg-mini
+get-debloated-pkgs --add-common --prefer-nano ffmpeg-mini webkit2gtk-4.1-mini
